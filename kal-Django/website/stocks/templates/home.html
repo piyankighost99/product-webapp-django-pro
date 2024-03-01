@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kal Web-Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+<body>
+    <header>
+            <div class="m-4">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="btn btn-primary">All Products</a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <div class="navbar-nav">
+                                <a href="{% url 'home' %}" class="nav-item nav-link">Home</a>
+                                <a href="{% url 'items'%}" class="nav-item nav-link active">Items</a>
+                                <a href="{% url 'contact_us'%}" class="nav-item nav-link">CONTACT US</a>
+                            </div>
+                            <div class="navbar-nav ms-auto">
+                                <a href="{% url 'sign' %}" class="nav-item nav-link">Login Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+    </header>
+    
+    <section id="homebody">
+        <div class="container">
+            <h1 class="text-center mt-5">Shop Anywhere</h1>
+            <div class="text-center">
+                <a href="{% url 'items' %}" class="btn btn-warning mt-3">View Products</a>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <section class="footer" id="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h3>Quick Links</h3>
+                <ul>
+              <li>   <a href="index.html"><i class="home"></i> Home</a></li>
+              <li> <a href="vehicles.html"><i class="home"></i> Vehicles</a></li>
+            
+              <li> <a href="contact.html"><i class="home"></i> Contact</a></li>
+              </ul>
+              </div>
+    
+              <div class="col-md-4">
+                <h3>Contact Info</h3>
+                <ul>
+                 
+                 <li> <a href="tel:+251929231706"><i class="phone"></i> +251 929 231 706</a></li>
+                 <li> <a href="tel:+251715273535"><i class="phone"></i> +251 715 273 535</a></li>
+                 <li><a href="tel:+251929231706"><i class="phone"></i> +251 988 168 953</a></li>
+                </ul>
+            
+              </div>
+    
+              <div class="col-md-4">
+                <h3>Social Media</h3>
+                <ul>
+              
+              
+                   <li> <a href="https://t.me/nattiep">Telegram</a> </li>
+                  <li> <a href="mailto:natiephrem501@gmail.com"> Email</a></li> 
+              </ul>
+              </div>
+            </div>
+    
+            <div class="credit">© 2023 Nati Cars | All Rights Reserved</div>
+          </div>
+        </section>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
